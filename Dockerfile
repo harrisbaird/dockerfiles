@@ -11,5 +11,8 @@ RUN apk --update add $BUILD_PACKAGES && \
   apk del $BUILD_PACKAGES && \
   rm -rf /var/cache/apk/*
 
+# Empty config file to ensure HttpCacheMiddleware gets loaded
+RUN touch scrapy.cfg
+
 EXPOSE 6800
 CMD ["scrapyd"]
