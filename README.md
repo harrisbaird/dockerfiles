@@ -1,10 +1,10 @@
 # Run a scrapyd service in Docker
 
-A scrapyd image thats less than 10% of the size of other scrapyd images thanks to it running the tiny [Alpine Linux](https://hub.docker.com/_/alpine/) container.
+A scrapyd docker image based on the tiny [Alpine Linux](https://hub.docker.com/_/alpine/).
 
 ## Download and run scrapyd image
     docker run -d --restart always --name scrapyd -p 6800:6800 dancake/scrapyd
-    
+
 ## Uploading spiders to scrapyd
 Install [scrapyd-client](https://github.com/scrapy/scrapyd-client) and use `scrapyd-deploy` in your spider directory to package it up and upload it to scrapyd.
 
@@ -15,7 +15,7 @@ You'll need to add some config to your project's `scrapy.cfg` file, take a look 
 
 ## Getting status of the job
     curl http://127.0.0.1:6800/listjobs.json -d project=default
-    
+
 or use the Web UI [http://127.0.0.1:6800/](http://127.0.0.1:6800/)
 
 ## External links
