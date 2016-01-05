@@ -1,3 +1,7 @@
+[![](https://badge.imagelayers.io/dancake/scrapyd:latest.svg)](https://imagelayers.io/?images=dancake/scrapyd:latest 'Get your own badge on imagelayers.io')
+
+---
+
 # Run a scrapyd service in Docker
 
 A scrapyd docker image based on the tiny [Alpine Linux](https://hub.docker.com/_/alpine/).
