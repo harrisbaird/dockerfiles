@@ -1,4 +1,4 @@
-[![](https://badge.imagelayers.io/dancake/scrapyd:latest.svg)](https://imagelayers.io/?images=dancake/scrapyd:latest 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/dancake/scrapyd.svg)](https://microbadger.com/images/dancake/scrapyd "Get your own image badge on microbadger.com")
 
 ---
 
