@@ -8,9 +8,8 @@ ENV PYTHON_PACKAGES scrapy scrapyd scrapyd-client w3lib scrapylib scrapyjs jmesp
 RUN mkdir /scrapyd
 WORKDIR /scrapyd
 
-RUN apk add --update $RUNTIME_PACKAGES && rm -rf /var/cache/apk/*
-
-RUN apk --update add $BUILD_PACKAGES && \
+RUN apk add --update $RUNTIME_PACKAGES && \
+  apk --update add $BUILD_PACKAGES && \
   pip --no-cache-dir install $PYTHON_PACKAGES && \
   apk del $BUILD_PACKAGES && \
   rm -rf /var/cache/apk/*
