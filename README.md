@@ -1,4 +1,4 @@
-[![](https://images.microbadger.com/badges/image/dancake/scrapyd.svg)](https://microbadger.com/images/dancake/scrapyd "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/harrisbaird/scrapyd.svg)](https://microbadger.com/images/harrisbaird/scrapyd "Get your own image badge on microbadger.com")
 
 ---
 
@@ -11,14 +11,14 @@ A scrapyd docker image based on the tiny [Alpine Linux](https://hub.docker.com/_
 * `py-3.5` [(Dockerfile)](https://github.com/harrisbaird/docker-scrapyd/blob/master/py3.5/Dockerfile)
 
 ## Download and run scrapyd image
-    docker run -d --restart always --name scrapyd -p 6800:6800 dancake/scrapyd
+    docker run -d --restart always --name scrapyd -p 6800:6800 harrisbaird/scrapyd
 
 ## Uploading spiders to scrapyd
 Install [scrapyd-client](https://github.com/scrapy/scrapyd-client) and use `scrapyd-deploy` in your spider directory to package it up and upload it to scrapyd.
 
 You'll need to add some config to your project's `scrapy.cfg` file, take a look at scrapyd-client for more info.
 
-## Schedule a job
+## Scheduling a job
     curl http://127.0.0.1:6800/schedule.json -d project=default -d spider=my_spider_name
 
 ## Getting status of the job
