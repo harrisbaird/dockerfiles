@@ -7,8 +7,8 @@
 A Scrapyd docker image based on the tiny [Alpine Linux](https://hub.docker.com/_/alpine/).
 
 ## Tags
-* `py-2.7`, `latest` [(Dockerfile)](https://github.com/harrisbaird/docker-scrapyd/blob/master/py2.7/Dockerfile)
-* `py-3.5` [(Dockerfile)](https://github.com/harrisbaird/docker-scrapyd/blob/master/py3.5/Dockerfile)
+* `py2.7`, `latest` [(Dockerfile)](https://github.com/harrisbaird/dockerfiles/blob/master/scrapyd/py2.7/Dockerfile)
+* `py3.5` [(Dockerfile)](https://github.com/harrisbaird/dockerfiles/blob/master/scrapyd/py3.5/Dockerfile)
 
 Keep in mind that although Scrapy supports Python 3.x, Scrapyd only has partial support.
 
