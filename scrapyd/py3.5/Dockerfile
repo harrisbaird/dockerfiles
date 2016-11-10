@@ -1,7 +1,7 @@
 FROM alpine:edge
 MAINTAINER mydancake@gmail.com
 
-ENV RUNTIME_PACKAGES python3 libxslt libxml2
+ENV RUNTIME_PACKAGES ca-certificates python3 libxslt libxml2
 ENV BUILD_PACKAGES build-base libxslt-dev libxml2-dev libffi-dev python3-dev openssl-dev libffi-dev git
 ENV PYTHON_PACKAGES scrapy w3lib scrapylib scrapyjs jmespath
 
