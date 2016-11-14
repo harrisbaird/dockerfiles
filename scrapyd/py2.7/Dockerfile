@@ -3,7 +3,7 @@ MAINTAINER mydancake@gmail.com
 
 ENV RUNTIME_PACKAGES ca-certificates python py2-pip libxslt libxml2
 ENV BUILD_PACKAGES build-base libxslt-dev libxml2-dev libffi-dev python-dev openssl-dev
-ENV PYTHON_PACKAGES scrapy scrapyd scrapyd-client w3lib scrapylib scrapyjs jmespath
+ENV PYTHON_PACKAGES scrapy scrapyd==1.1.0 scrapyd-client w3lib scrapylib scrapyjs jmespath
 
 RUN mkdir /scrapyd
 WORKDIR /scrapyd
