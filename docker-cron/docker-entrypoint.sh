@@ -8,7 +8,7 @@ fi
 if [ ! -S "/var/run/docker.sock" ]; then
   echo "/var/run/docker.sock is not available in the container."
   echo "Did you run with \"-v /var/run/docker.sock:/var/run/docker.sock:ro\"?"
-  exit 1
+  echo "docker-cloud will still work but anything requiring the docker socket will not."
 fi
 
 tinycron "$SCHEDULE" "$COMMAND"
