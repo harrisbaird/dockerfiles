@@ -10,6 +10,7 @@ WORKDIR /scrapyd
 
 RUN apk add --update $RUNTIME_PACKAGES && \
   apk --update add $BUILD_PACKAGES && \
+  update-ca-certificates && \
   pip --no-cache-dir install $PYTHON_PACKAGES && \
   apk del $BUILD_PACKAGES && \
   rm -rf /var/cache/apk/*

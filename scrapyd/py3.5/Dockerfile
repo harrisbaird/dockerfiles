@@ -9,6 +9,7 @@ RUN mkdir /scrapyd
 WORKDIR /scrapyd
 
 RUN apk add --update $RUNTIME_PACKAGES $BUILD_PACKAGES && \
+  update-ca-certificates && \
   python3 -m ensurepip && \
   pip3 --no-cache-dir install --upgrade pip setuptools $PYTHON_PACKAGES \
   git+https://github.com/redapple/scrapyd-client.git@py3-support \
