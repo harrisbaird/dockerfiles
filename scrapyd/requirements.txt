@@ -1,0 +1,9 @@
+scrapy
+scrapyd
+scrapyd-client
+
+# Useful libraries
+w3lib
+scrapylib
+scrapyjs
+jmespath
