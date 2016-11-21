@@ -1,4 +1,5 @@
 FROM docker:latest
+MAINTAINER daniel@harrisbaird.co.uk
 
 # The docker-compose binary won't run on Alpine (issue #3465)
 RUN apk add --no-cache py-pip && \

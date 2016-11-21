@@ -1,5 +1,5 @@
 FROM alpine:edge
-MAINTAINER mydancake@gmail.com
+MAINTAINER daniel@harrisbaird.co.uk
 
 ENV RUNTIME_PACKAGES ca-certificates python py2-pip libxslt libxml2
 ENV BUILD_PACKAGES build-base libxslt-dev libxml2-dev libffi-dev python-dev openssl-dev
