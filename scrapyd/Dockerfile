@@ -15,8 +15,5 @@ RUN apk --no-cache add --virtual build-dependencies $BUILD_PACKAGES && \
     pip --no-cache-dir install -r requirements.txt && \
     apk del build-dependencies
 
-# Empty config file to ensure HttpCacheMiddleware gets loaded
-RUN touch scrapy.cfg
-
 EXPOSE 6800
 CMD ["scrapyd"]
