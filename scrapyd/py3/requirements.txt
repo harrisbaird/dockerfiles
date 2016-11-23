@@ -1,0 +1,9 @@
+scrapy
+git+https://github.com/scrapy/scrapyd.git@python3-wip
+git+https://github.com/scrapy/scrapyd-client.git@python3-wip
+
+# Useful libraries
+w3lib
+scrapylib
+scrapyjs
+jmespath

@@ -6,6 +6,12 @@
 
 A Scrapyd docker image based on the tiny [Alpine Linux](https://hub.docker.com/_/alpine/).
 
+## Tags
+* `py2`, `latest` [(Dockerfile)](https://github.com/harrisbaird/dockerfiles/blob/master/scrapyd/py2/Dockerfile)
+* `py3` [(Dockerfile)](https://github.com/harrisbaird/dockerfiles/blob/master/scrapyd/py3/Dockerfile)
+
+Keep in mind that although Scrapy supports Python 3.x, Scrapyd only has partial support.
+
 ## Download and run Scrapyd image
     docker run -d --restart always --name scrapyd -p 6800:6800 harrisbaird/scrapyd
 
@@ -41,12 +47,12 @@ RUN scrapyd & PID=$! && \
 ```
 
 ## Scheduling a job
-    curl http://127.0.0.1:6800/schedule.json -d project=default -d spider=my_spider_name
+    curl http://localhost:6800/schedule.json -d project=default -d spider=my_spider_name
 
 ## Listing all jobs
-    curl http://127.0.0.1:6800/listjobs.json -d project=default
+    curl http://localhost:6800/listjobs.json -d project=default
 
-or use the Web UI [http://127.0.0.1:6800/](http://127.0.0.1:6800/)
+or use the Web UI [http://127.0.0.1:6800/](http://localhost:6800/)
 
 ## External links
 
