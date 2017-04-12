@@ -1,5 +1,5 @@
 from alpine:latest
-MAINTAINER daniel@harrisbaird.co.uk
+LABEL maintainer daniel@harrisbaird.co.uk
 
 ENV RUNTIME_PACKAGES ca-certificates python3 libxslt libxml2
 ENV BUILD_PACKAGES build-base python3-dev libxslt-dev libxml2-dev libffi-dev openssl-dev git

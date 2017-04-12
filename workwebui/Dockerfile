@@ -1,4 +1,5 @@
 FROM golang:alpine
+LABEL maintainer daniel@harrisbaird.co.uk
 
 RUN apk --no-cache add --virtual build-dependencies git && \
     go get github.com/gocraft/work/cmd/workwebui && \
