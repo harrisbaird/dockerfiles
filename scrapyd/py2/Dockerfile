@@ -1,4 +1,4 @@
-from alpine:latest
+FROM alpine:3.6
 LABEL maintainer daniel@harrisbaird.co.uk
 
 ENV RUNTIME_PACKAGES ca-certificates python py-pip libxslt libxml2

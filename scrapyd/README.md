@@ -10,8 +10,6 @@ A Scrapyd docker image based on the tiny [Alpine Linux](https://hub.docker.com/_
 * `py2`, `latest` [(Dockerfile)](https://github.com/harrisbaird/dockerfiles/blob/master/scrapyd/py2/Dockerfile)
 * `py3` [(Dockerfile)](https://github.com/harrisbaird/dockerfiles/blob/master/scrapyd/py3/Dockerfile)
 
-Keep in mind that although Scrapy supports Python 3.x, Scrapyd only has partial support.
-
 ## Download and run Scrapyd image
     docker run -d --restart always --name scrapyd -p 6800:6800 harrisbaird/scrapyd
 

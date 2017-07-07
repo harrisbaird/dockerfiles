@@ -1,5 +1,5 @@
-scrapy
-scrapyd
+scrapy==1.4.0
+scrapyd==1.2.0
 scrapyd-client
 
 # Useful libraries
