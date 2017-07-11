@@ -1,7 +1,7 @@
 FROM alpine:3.6
 LABEL maintainer daniel@harrisbaird.co.uk
 
-ENV RUNTIME_PACKAGES ca-certificates python py-pip libxslt libxml2
+ENV RUNTIME_PACKAGES ca-certificates python py-pip libxslt libxml2 libssl1.0
 ENV BUILD_PACKAGES build-base libxslt-dev libxml2-dev libffi-dev python-dev openssl-dev
 
 WORKDIR /scrapyd
