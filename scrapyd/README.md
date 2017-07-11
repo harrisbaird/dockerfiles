@@ -50,7 +50,7 @@ RUN scrapyd & PID=$! && \
 ## Listing all jobs
     curl http://localhost:6800/listjobs.json -d project=default
 
-or use the Web UI [http://127.0.0.1:6800/](http://localhost:6800/)
+For a full list of endpoints, take a look at the [Scrapyd docs](https://scrapyd.readthedocs.io/en/stable/).
 
 ## External links
 
