@@ -5,7 +5,7 @@ if [ -z "$REDIS_NAMESPACE" ]; then
     exit 1
 fi
 
-REDIS_HOST=${VARIABLE:-redis:6379}
+REDIS_HOST=${REDIS_HOST:-redis:6379}
 
 workwebui -redis="$REDIS_HOST" \
           -ns="$REDIS_NAMESPACE" \
